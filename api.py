@@ -50,7 +50,7 @@ def api_filter():
 
     print("query >> ", query)
     print("to_filter >> ", to_filter)
-    conn = sqlite3.connect('leadbook.db')
+    conn = sqlite3.connect('lb.db')
     conn.row_factory = dict_factory
     cur = conn.cursor()
 
